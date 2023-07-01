@@ -1,0 +1,60 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.wide-column {
+    width: 300px; /* Adjust the width value as needed */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 600px; /* Adjust the width as needed */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+td:first-child:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px; /* Position the half circle at the beginning */
+    transform: translate(-50%, -50%);
+    width: 30px; /* Width of the half circle */
+    height: 30px; /* Height of the half circle */
+    border-radius: 50% 0 0 50%; /* Circular border on the left side of the half circle */
+    background-color: orange; /* Orange color for the half circle */
+}
+
+td:last-child:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Position the half circle at the end */
+    transform: translate(50%, -50%);
+    width: 30px; /* Width of the half circle */
+    height: 30px; /* Height of the half circle */
+    border-radius: 0 50% 50% 0; /* Circular border on the right side of the half circle */
+    background-color: orange; /* Orange color for the half circle */
+}
