@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Boat Profile - Esperanca</title>
-    <link rel="stylesheet" type="text/css" href="styles-profile.css">
+  <title>Boat Profile - Esperanca</title>
+  <link rel="stylesheet" type="text/css" href="styles-profile.css">
+  <style>
+    .race-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .race-description {
+      flex-grow: 1;
+    }
+
+    .race-gif {
+      margin-left: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../logo.png" alt="Logo">
-        </a>
-        
-    </header>
-    <main>
-        <img src="flying_scot_drawing.jpg" alt="Flying Scot Drawing">
-        <h1 class="boat-name">Esperanca</h1>
-        <h2>Flying Scot</h2>
-        <hr>
-        <section>
-            <h2>RACE: 06/29/23</h2>
-            <h3>Total Points: 6</h3>
-            <h4>Sailors Aboard:</h4>
-            <h4><a href="../sailors/dj_m.html">Dj M</a></h4>
-            <h4><a href="../sailors/john_h.html">John H</a></h4>
-            <h4><a href="../sailors/mike.html">Mike</a></h4>
-        </section>
-        <hr>
-    </main>
+  <header>
+    <a href="../index.html">
+      <img src="../logo.png" alt="Logo">
+    </a>
+  </header>
+  <main>
+    <img src="flying_scot_drawing.jpg" alt="Flying Scot Drawing">
+    <h1 class="boat-name">Esperanca</h1>
+    <h2>Flying Scot</h2>
+    <hr>
+    <section class="race-info">
+      <div class="race-description">
+        <h2>RACE: 06/29/23</h2>
+        <h3>Total Points: 6</h3>
+        <h4>Sailors Aboard:</h4>
+        <h4><a href="../sailors/dj_m.html">Dj M</a></h4>
+        <h4><a href="../sailors/john_h.html">John H</a></h4>
+        <h4><a href="../sailors/mike.html">Mike</a></h4>
+      </div>
+      <div class="race-gif">
+        <img src="GPX-Animation.gif" alt="Animated GIF">
+      </div>
+    </section>
+    <hr>
+  </main>
 </body>
 </html>
